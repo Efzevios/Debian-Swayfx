@@ -62,6 +62,15 @@ Os scripts do sistema foram reorganizados para facilitar o uso:
     *   `swayfx.sh`: Gerencia configurações ou dependências relacionadas ao SwayFX.
 *   **`Scripts/antigos/`**: Contém scripts antigos, guardados apenas como histórico e referência.
 
+## 🤝 Projetos Complementares
+
+Abaixo estão alguns projetos incríveis que recomendo e que complementam perfeitamente este rice:
+
+*   **[LinuxToys](https://github.com/lucasew/linuxtoys)**
+*   **[tgpt](https://github.com/aandrew-me/tgpt)**
+*   **[Spicetify](https://spicetify.app/)**
+*   **[tldr](https://tldr.sh/)**
+
 ---
 
 *Nota: Lembre-se de revisar os arquivos de configuração para adaptá-los ao seu hardware específico, como nomes de monitores e resoluções no arquivo de configuração do Sway.*
