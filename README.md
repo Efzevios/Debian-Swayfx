@@ -2,6 +2,14 @@
 
 Este repositório contém minhas configurações e scripts pessoais do Sway (dotfiles).
 
+## 📸 Capturas de Tela
+
+<div align="center">
+  <img src="Imagens/print_2026-05-31_08-56-49.png" width="30%" />
+  <img src="Imagens/print_2026-05-31_08-56-57.png" width="30%" />
+  <img src="Imagens/print_2026-05-31_08-57-59.png" width="30%" />
+</div>
+
 ## 📦 Conteúdo Atual
 
 *   **Gerenciador de Janelas:** [Sway](https://swaywm.org/)
@@ -41,7 +49,17 @@ O papel de parede está localizado em `.config/background-d.jpg`. Ele será carr
 
 Os scripts do sistema foram reorganizados para facilitar o uso:
 
-*   **`Scripts/atuais/`**: Contém os scripts em uso hoje no setup (como configurações do dms, áudio, Timeshift, SwayFX, etc).
+*   **`Scripts/atuais/`**: Contém os scripts em uso hoje no setup. Abaixo, uma explicação de cada um:
+    *   `ativar-serviços.sh`: Ativa serviços essenciais em modo usuário (como o Syncthing).
+    *   `audio.sh`: Configura o WirePlumber para corrigir problemas de áudio (como travamentos e volume baixo).
+    *   `configurações-dms.sh`: Aplica as configurações personalizadas do menu DankMaterialShell (DMS).
+    *   `cubesuite.sh`: Gerencia a inicialização ou configuração do Cubesuite.
+    *   `fix_kdeconnect_sway.sh`: Resolve problemas de compatibilidade do KDE Connect no Sway.
+    *   `instalar_kdeconnect.sh`: Instala e prepara o KDE Connect para uso com o SwayFX e o DMS.
+    *   `open-tablet-driver.sh`: Configura e inicia o OpenTabletDriver.
+    *   `setup_cliphist.sh`: Instala e configura o gerenciador de área de transferência Cliphist.
+    *   `setup-timeshift.sh`: Realiza a configuração inicial do Timeshift para backups do sistema.
+    *   `swayfx.sh`: Gerencia configurações ou dependências relacionadas ao SwayFX.
 *   **`Scripts/antigos/`**: Contém scripts antigos, guardados apenas como histórico e referência.
 
 ---
