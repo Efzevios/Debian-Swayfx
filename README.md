@@ -2,16 +2,17 @@
 
 Este repositório contém minhas configurações e scripts pessoais do Sway (dotfiles).
 
-## 📦 Conteúdo
+## 📦 Conteúdo Atual
 
 *   **Gerenciador de Janelas:** [Sway](https://swaywm.org/)
 *   **Barra:** [Waybar](https://github.com/Alexays/Waybar)
 *   **Terminal:** [foot](https://codeberg.org/dnkl/foot)
-*   **Lançador de Aplicativos:** [Wofi](https://hg.sr.ht/~scoopta/wofi)
-*   **Notificações:** [Swaync](https://github.com/ErikReider/SwayNotificationCenter)
+*   **Menu / Lançador de Aplicativos:** dms *(substituiu o Wofi)*
 *   **Prompt (Terminal):** [Oh My Posh](https://ohmyposh.dev/)
 *   **Informações do Sistema:** [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
 *   **Controle do Mouse via Teclado:** [warpd](https://github.com/rvaiya/warpd)
+
+*(Componentes como Wofi e Swaync não são mais utilizados no setup atual. Seus arquivos foram mantidos na pasta `.config/antigos/` caso queira acessá-los.)*
 
 ## 🚀 Instalação
 
@@ -21,7 +22,7 @@ Este repositório contém minhas configurações e scripts pessoais do Sway (dot
     cd Sway
     ```
 
-2.  Copie os arquivos de configuração para o seu diretório `~/.config`:
+2.  Copie os arquivos de configuração atuais para o seu diretório `~/.config` (ignorando a pasta de antigos, se quiser):
     ```bash
     cp -r .config/* ~/.config/
     ```
@@ -32,15 +33,16 @@ Este repositório contém minhas configurações e scripts pessoais do Sway (dot
     cp .profile ~/.profile
     ```
 
-4.  Os scripts da pasta `Scripts/` podem ser copiados ou executados conforme sua necessidade.
-
 ## 🖼️ Papel de Parede
 
 O papel de parede está localizado em `.config/background-d.jpg`. Ele será carregado automaticamente pela configuração do Sway, que espera encontrá-lo em `~/.config/background-d.jpg`.
 
 ## ⚙️ Scripts
 
-Este repositório também inclui alguns scripts úteis na pasta `Scripts/` para configurar o Timeshift, áudio, SwayFX, KDE Connect, entre outras coisas.
+Os scripts do sistema foram reorganizados para facilitar o uso:
+
+*   **`Scripts/atuais/`**: Contém os scripts em uso hoje no setup (como configurações do dms, áudio, Timeshift, SwayFX, etc).
+*   **`Scripts/antigos/`**: Contém scripts antigos, guardados apenas como histórico e referência.
 
 ---
 
