@@ -1,0 +1,84 @@
+* {
+    font-family: monospace;
+    font-size: 14px;
+    min-height: 0;
+    margin: 0;
+    padding: 0;
+    border: none;
+}
+
+/* Usamos background-color em rgba() para contornar o bug das bordas pretas do GTK */
+window#waybar {
+    background-color: rgba(14, 14, 14, 0.95);
+    color: #eee;
+    border-radius: 20px;
+    box-shadow: none;
+    border: 0px;
+}
+
+/* Espaçamento para empurrar os itens até as extremidades do módulo de 60% */
+.modules-left {
+    padding-left: 20px;
+}
+
+.modules-right {
+    padding-right: 20px;
+}
+
+#workspaces {
+    margin: 2px 0;
+    border-radius: 12px;
+}
+
+/* Estilo para as "bolas" do workspace */
+#workspaces button {
+    color: #666;
+    padding: 0 4px;
+    background: transparent;
+    font-size: 16px;
+    border-radius: 12px;
+    transition: all 0.2s ease-in-out;
+}
+
+#workspaces button.focused {
+    color: #eee;
+    text-shadow: 0 0 5px rgba(238, 238, 238, 0.4);
+}
+
+#workspaces button.urgent {
+    color: #cc4545;
+}
+
+#workspaces button:hover {
+    box-shadow: inherit;
+    text-shadow: inherit;
+    color: #aaa;
+    background-color: rgba(255, 255, 255, 0.05);
+}
+
+/* Nome da aplicação em foco: Background aumentado conforme solicitado */
+#window {
+    font-weight: bold;
+    color: #eee;
+    margin: 2px 0;
+    padding: 2px 32px;
+    background-color: #2d2d2d;
+    border-radius: 12px;
+}
+
+#clock {
+    color: #eee;
+    font-weight: bold;
+    margin: 3px 0;
+}
+/* Estilos para o Tooltip (Calendário e afins) */
+tooltip {
+    background: rgba(17, 17, 17, 0.95);
+    border: 2px solid #2a2a2a;
+    border-radius: 12px;
+}
+
+tooltip label {
+    color: #eeeeee;
+    padding: 4px 8px;
+}
