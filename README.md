@@ -1,47 +1,47 @@
-# My Sway Rice
+# Meu Rice do Sway
 
-This repository contains my personal Sway dotfiles and configuration scripts. 
+Este repositório contém minhas configurações e scripts pessoais do Sway (dotfiles).
 
-## 📦 Contents
+## 📦 Conteúdo
 
-*   **Window Manager:** [Sway](https://swaywm.org/)
-*   **Bar:** [Waybar](https://github.com/Alexays/Waybar)
+*   **Gerenciador de Janelas:** [Sway](https://swaywm.org/)
+*   **Barra:** [Waybar](https://github.com/Alexays/Waybar)
 *   **Terminal:** [foot](https://codeberg.org/dnkl/foot)
-*   **Application Launcher:** [Wofi](https://hg.sr.ht/~scoopta/wofi)
-*   **Notification Daemon:** [Swaync](https://github.com/ErikReider/SwayNotificationCenter)
-*   **Prompt:** [Oh My Posh](https://ohmyposh.dev/)
-*   **System Fetch:** [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
-*   **Mouse manipulation:** [warpd](https://github.com/rvaiya/warpd)
+*   **Lançador de Aplicativos:** [Wofi](https://hg.sr.ht/~scoopta/wofi)
+*   **Notificações:** [Swaync](https://github.com/ErikReider/SwayNotificationCenter)
+*   **Prompt (Terminal):** [Oh My Posh](https://ohmyposh.dev/)
+*   **Informações do Sistema:** [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
+*   **Controle do Mouse via Teclado:** [warpd](https://github.com/rvaiya/warpd)
 
-## 🚀 Installation
+## 🚀 Instalação
 
-1.  Clone this repository:
+1.  Clone este repositório:
     ```bash
-    git clone <YOUR_REPO_URL>
-    cd <YOUR_REPO_NAME>
+    git clone https://github.com/efzevios/Sway.git
+    cd Sway
     ```
 
-2.  Copy the configuration files to your `~/.config` directory:
+2.  Copie os arquivos de configuração para o seu diretório `~/.config`:
     ```bash
     cp -r .config/* ~/.config/
     ```
 
-3.  Copy `.bashrc` and `.profile` to your home directory (make backups first!):
+3.  Copie os arquivos `.bashrc` e `.profile` para a sua pasta de usuário (faça um backup dos seus originais primeiro!):
     ```bash
     cp .bashrc ~/.bashrc
     cp .profile ~/.profile
     ```
 
-4.  Scripts can be copied or executed as needed from the `Scripts/` folder.
+4.  Os scripts da pasta `Scripts/` podem ser copiados ou executados conforme sua necessidade.
 
-## 🖼️ Wallpaper
+## 🖼️ Papel de Parede
 
-The wallpaper is located at `.config/background-d.jpg`. It will automatically be loaded by the Sway configuration file, which expects it to be at `~/.config/background-d.jpg`.
+O papel de parede está localizado em `.config/background-d.jpg`. Ele será carregado automaticamente pela configuração do Sway, que espera encontrá-lo em `~/.config/background-d.jpg`.
 
 ## ⚙️ Scripts
 
-This repository also includes some useful scripts in the `Scripts/` directory for setting up Timeshift, configuring audio, SwayFX, KDE Connect, and more.
+Este repositório também inclui alguns scripts úteis na pasta `Scripts/` para configurar o Timeshift, áudio, SwayFX, KDE Connect, entre outras coisas.
 
 ---
 
-*Note: Make sure to review the configuration files to adapt them to your specific hardware setup, such as monitor names and resolutions in the Sway config.*
+*Nota: Lembre-se de revisar os arquivos de configuração para adaptá-los ao seu hardware específico, como nomes de monitores e resoluções no arquivo de configuração do Sway.*
