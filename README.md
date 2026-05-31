@@ -66,7 +66,7 @@ Os scripts do sistema foram reorganizados para facilitar o uso:
 
 Abaixo estão alguns projetos incríveis que recomendo e que complementam perfeitamente este rice:
 
-*   **[LinuxToys](https://github.com/lucasew/linuxtoys)**
+*   **[LinuxToys](https://github.com/psygreg/linuxtoys)**
 *   **[tgpt](https://github.com/aandrew-me/tgpt)**
 *   **[Spicetify](https://spicetify.app/)**
 *   **[tldr](https://tldr.sh/)**
