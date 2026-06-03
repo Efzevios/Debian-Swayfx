@@ -9,7 +9,7 @@ set $down j
 set $up k
 set $right l
 set $term foot
-set $menu dms ipc launcher toggle
+set $menu ~/.local/bin/rofi-launcher
 set $gnome-schema org.gnome.desktop.interface
 
 include /etc/sway/config-vars.d/*
@@ -19,7 +19,7 @@ include /etc/sway/config-vars.d/*
 # ==========================================
 output DP-1 resolution 1920x1080 position 1024,0
 output HDMI-A-1 resolution 1366x768 position 0,1080
-output * bg ~/.config/background-d.jpg fill
+output * bg /home/efzevios/.config/background-d.jpg fill
 
 input * {
     xkb_layout "br"
@@ -74,7 +74,14 @@ exec wl-paste --type image --watch cliphist store
 exec systemctl --user start opentabletdriver.service
 exec sleep 2 && otd-gui --minimized
 exec syncthing --no-browser
-exec dms run
+exec_always pkill waybar; env LC_ALL="pt_BR.utf8" waybar
+exec_always pkill swaync; swaync
+
+# Configuração de blur do SwayFX
+blur on
+
+# layer_effects "swaync-control-center" blur enable; shadows enable
+layer_effects "wofi" blur enable
 
 # ==========================================
 # 6. ATALHOS DE TECLADO
@@ -85,12 +92,13 @@ bindsym $mod+t exec $term
 bindsym $mod+d exec $menu
 bindsym $mod+Shift+q kill
 bindsym $mod+Shift+c reload
-bindsym $mod+Delete exec dms ipc powermenu toggle
+#bindsym $mod+Delete exec rofi -show p -modi p:rofi-power-menu
 
-# Utilitários (DMS, Cliphist, Cores, Print)
-bindsym $mod+n exec dms ipc notifications toggle
+# Utilitários (Cliphist, Cores, Print)
+bindsym $mod+n exec swaync-client -t -sw
+bindsym $mod+Shift+n exec swaync-client -d -sw
 bindsym $mod+m exec $term -a btop_monitor btop
-bindsym $mod+Shift+d exec dms ipc clipboard toggle
+bindsym $mod+Shift+d exec /home/efzevios/.config/rofi/clipboard.sh
 bindsym $mod+Shift+p exec grim -g "$(slurp -p)" -t ppm - | convert - - format '%[pixel:p{0,0}]' txt:- | tail -n 1 | cut -d ' ' -f 4 | wl-copy
 bindsym $mod+Ctrl+Shift+p exec grim -g "$(slurp)" - | tee ~/Imagens/print_$(date +'%Y-%m-%d_%H-%M-%S').png | wl-copy
 
@@ -190,3 +198,6 @@ bindsym Mod4+Mod1+c exec warpd --normal
 bindsym Mod4+Mod1+g exec warpd --grid
 
 include /etc/sway/config.d/*
+
+# Autostart do KDE Connect (Indicador na System Tray)
+exec --no-startup-id /usr/bin/kdeconnect-indicator

@@ -15,12 +15,12 @@ Este repositório contém minhas configurações e scripts pessoais do Sway (dot
 *   **Gerenciador de Janelas:** [Sway](https://swaywm.org/)
 *   **Barra:** [Waybar](https://github.com/Alexays/Waybar)
 *   **Terminal:** [foot](https://codeberg.org/dnkl/foot)
-*   **Menu / Lançador de Aplicativos:** dms *(substituiu o Wofi)*
+*   **Menu / Lançador de Aplicativos:** [Rofi Wayland](https://github.com/lbonn/rofi) *(substituiu o DMS e o Wofi)*
 *   **Prompt (Terminal):** [Oh My Posh](https://ohmyposh.dev/)
 *   **Informações do Sistema:** [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
 *   **Controle do Mouse via Teclado:** [warpd](https://github.com/rvaiya/warpd)
 
-*(Componentes como Wofi e Swaync não são mais utilizados no setup atual. Seus arquivos foram mantidos na pasta `.config/antigos/` caso queira acessá-los.)*
+*(Componentes como DMS, Wofi e Swaync não são mais utilizados no setup atual. Seus arquivos foram mantidos nas pastas `antigos/` caso queira acessá-los.)*
 
 ## 🚀 Instalação
 
@@ -35,7 +35,14 @@ Este repositório contém minhas configurações e scripts pessoais do Sway (dot
     cp -r .config/* ~/.config/
     ```
 
-3.  Copie os arquivos `.bashrc` e `.profile` para a sua pasta de usuário (faça um backup dos seus originais primeiro!):
+3.  Copie os scripts do lançador Rofi para o seu diretório `.local/bin` (necessário para o "Abrir com..." e o lançador principal):
+    ```bash
+    mkdir -p ~/.local/bin
+    cp -r .local/bin/* ~/.local/bin/
+    chmod +x ~/.local/bin/*
+    ```
+
+4.  Copie os arquivos `.bashrc` e `.profile` para a sua pasta de usuário (faça um backup dos seus originais primeiro!):
     ```bash
     cp .bashrc ~/.bashrc
     cp .profile ~/.profile
@@ -52,10 +59,10 @@ Os scripts do sistema foram reorganizados para facilitar o uso:
 *   **`Scripts/atuais/`**: Contém os scripts em uso hoje no setup. Abaixo, uma explicação de cada um:
     *   `ativar-serviços.sh`: Ativa serviços essenciais em modo usuário (como o Syncthing).
     *   `audio.sh`: Configura o WirePlumber para corrigir problemas de áudio (como travamentos e volume baixo).
-    *   `configurações-dms.sh`: Aplica as configurações personalizadas do menu DankMaterialShell (DMS).
     *   `cubesuite.sh`: Gerencia a inicialização ou configuração do Cubesuite.
     *   `fix_kdeconnect_sway.sh`: Resolve problemas de compatibilidade do KDE Connect no Sway.
-    *   `instalar_kdeconnect.sh`: Instala e prepara o KDE Connect para uso com o SwayFX e o DMS.
+    *   `instalar_dependencias_rice.sh`: Baixa e instala dependências vitais como o Rofi-Wayland, Fontes Inter e Nerd Fonts.
+    *   `instalar_kdeconnect.sh`: Instala e prepara o KDE Connect para uso com o SwayFX.
     *   `open-tablet-driver.sh`: Configura e inicia o OpenTabletDriver.
     *   `setup_cliphist.sh`: Instala e configura o gerenciador de área de transferência Cliphist.
     *   `setup-timeshift.sh`: Realiza a configuração inicial do Timeshift para backups do sistema.

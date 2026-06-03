@@ -3,13 +3,13 @@ ATALHOS DO SWAY
 
 BÁSICOS E APLICATIVOS
 Super + T: Inicia o terminal padrão (foot)
-Super + D: Inicia o lançador de aplicativos (DMS)
+Super + D: Inicia o lançador de aplicativos (Rofi)
 Super + M: Abre o monitor de processos (Btop)
 Super + N: Abre as notificações
+Super + Shift + N: Alterna o modo Não Perturbe
 Super + Shift + D: Abre o histórico da área de transferência
 Super + Shift + Q: Fecha a janela em foco
 Super + Shift + C: Recarrega a configuração do Sway
-Super + Delete: Abre o menu de energia (DMS)
 
 UTILITÁRIOS
 Ctrl + Super + H: Mostra esta lista de atalhos

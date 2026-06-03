@@ -1,84 +1,103 @@
 * {
     font-family: monospace;
-    font-size: 14px;
-    min-height: 0;
-    margin: 0;
-    padding: 0;
+    font-size: 13px;
+    font-weight: 400;
     border: none;
-}
-
-/* Usamos background-color em rgba() para contornar o bug das bordas pretas do GTK */
-window#waybar {
-    background-color: rgba(14, 14, 14, 0.95);
-    color: #eee;
-    border-radius: 20px;
+    border-radius: 0;
     box-shadow: none;
-    border: 0px;
+    text-shadow: none;
+    min-height: 0;
 }
 
-/* Espaçamento para empurrar os itens até as extremidades do módulo de 60% */
+window#waybar {
+    background-color: transparent;
+}
+
+window#waybar > box {
+    background-color: #131313;
+    border-radius: 21px;
+}
+
 .modules-left {
-    padding-left: 20px;
+    padding-left: 2px;
 }
 
 .modules-right {
-    padding-right: 20px;
+    padding-right: 2px;
 }
 
+/* Floating modules / Pills format */
+#custom-clock, #window, #battery, #pulseaudio, #network, #tray, #custom-swaync, #custom-clipboard, #custom-controlcenter {
+    background-color: rgba(31, 31, 31, 1.0); /* #1f1f1f */
+    color: rgba(226, 226, 226, 1.0); /* Branco original */
+    border-radius: 20px;
+    padding: 0 10px;
+    margin: 4px 3px;
+}
+
+/* Sway Workspaces Styling */
 #workspaces {
-    margin: 2px 0;
-    border-radius: 12px;
-}
-
-/* Estilo para as "bolas" do workspace */
-#workspaces button {
-    color: #666;
+    background-color: rgba(31, 31, 31, 1.0); /* Pílula de realce (container) */
+    border-radius: 20px;
     padding: 0 4px;
-    background: transparent;
-    font-size: 16px;
-    border-radius: 12px;
-    transition: all 0.2s ease-in-out;
+    margin: 4px 3px;
 }
 
-#workspaces button.focused {
-    color: #eee;
-    text-shadow: 0 0 5px rgba(238, 238, 238, 0.4);
-}
-
-#workspaces button.urgent {
-    color: #cc4545;
+#workspaces button {
+    font-size: 10px; /* Fonte reduzida para caber no círculo menor */
+    color: rgba(226, 226, 226, 1.0); /* Branco original */
+    background-color: #5A5A5A; /* Pílulas normais (sem foco) */
+    border-radius: 100%; /* 100% circular */
+    padding: 0;
+    margin: 4px 3px;
+    min-width: 22px;
+    min-height: 22px;
+    transition: all 0.3s cubic-bezier(.55,-0.68,.48,1.68); /* Animação elástica suave */
 }
 
 #workspaces button:hover {
-    box-shadow: inherit;
-    text-shadow: inherit;
-    color: #aaa;
-    background-color: rgba(255, 255, 255, 0.05);
+    background-color: rgba(226, 226, 226, 0.5);
 }
 
-/* Nome da aplicação em foco: Background aumentado conforme solicitado */
-#window {
-    font-weight: bold;
-    color: #eee;
-    margin: 2px 0;
-    padding: 2px 32px;
-    background-color: #2d2d2d;
+#workspaces button.focused, #workspaces button.active {
+    color: rgba(27, 27, 27, 1.0);
+    background-color: rgba(255, 255, 255, 1.0); /* Cor de destaque para o focado */
+    border-radius: 12px; /* Mais arredondado (formato cápsula) */
+    min-width: 20px; /* Tamanho reduzido pela metade */
+    min-height: 22px;
+    padding: 0 4px; /* Preenchimento reduzido */
+    margin: 4px 3px;
+}
+
+#workspaces button.urgent {
+    background-color: rgba(255, 180, 171, 1.0);
+    color: rgba(105, 0, 5, 1.0);
     border-radius: 12px;
 }
 
-#clock {
-    color: #eee;
-    font-weight: bold;
-    margin: 3px 0;
-}
-/* Estilos para o Tooltip (Calendário e afins) */
-tooltip {
-    background: rgba(17, 17, 17, 0.95);
-    border: 2px solid #2a2a2a;
-    border-radius: 12px;
+/* Battery Alerts */
+#battery.warning {
+    color: rgba(255, 180, 171, 1.0);
 }
 
-tooltip label {
-    color: #eeeeee;
-    padding: 4px 8px;
+#battery.critical {
+    background-color: rgba(255, 180, 171, 1.0);
+    color: rgba(105, 0, 5, 1.0);
+}
+
+/* System Tray */
+#tray {
+    padding: 0 10px;
+}
+
+#tray > .passive {
+    -gtk-icon-effect: dim;
+}
+
+#tray > .needs-attention {
+    -gtk-icon-effect: highlight;
+}
+
+#custom-swaync.notification {
+    color: rgba(255, 180, 171, 1.0); /* Vermelho para indicar que há mensagens (apenas fora do Não Perturbe) */
 }

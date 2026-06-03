@@ -1,7 +1,7 @@
 #!/bin/bash
 
 echo "=========================================================="
-echo " Instalador e Adaptador do KDE Connect para SwayFX + DMS  "
+echo " Instalador e Adaptador do KDE Connect para SwayFX "
 echo "=========================================================="
 
 echo "[*] Instalando o KDE Connect e dependências essenciais..."
@@ -12,11 +12,11 @@ sudo apt-get install -y kdeconnect wl-clipboard dbus-x11
 echo "[*] Garantindo que os serviços comecem junto com o Sway..."
 SWAY_CONFIG="$HOME/.config/sway/config"
 
-# O Sway precisa ser instruído a lançar o indicador gráfico (que ficará na bandeja do DMS)
+# O Sway precisa ser instruído a lançar o indicador gráfico
 if [ -f "$SWAY_CONFIG" ]; then
     if ! grep -q "kdeconnect-indicator" "$SWAY_CONFIG"; then
         echo "" >> "$SWAY_CONFIG"
-        echo "# Autostart do KDE Connect (Indicador na System Tray do DMS)" >> "$SWAY_CONFIG"
+        echo "# Autostart do KDE Connect" >> "$SWAY_CONFIG"
         echo "exec --no-startup-id /usr/bin/kdeconnect-indicator" >> "$SWAY_CONFIG"
         echo "[+] Regra de autostart adicionada ao $SWAY_CONFIG"
     else
@@ -42,5 +42,5 @@ echo "=========================================================="
 echo "[+] Concluído! "
 echo "Para iniciar agora sem reiniciar a sessão, rodando o indicador:"
 nohup /usr/bin/kdeconnect-indicator >/dev/null 2>&1 &
-echo "[+] Olhe a sua barra do DMS, o ícone do KDE Connect deve aparecer em instantes."
+echo "[+] Olhe a sua barra de tarefas, o ícone do KDE Connect deve aparecer em instantes."
 echo "Agora é só parear com o aplicativo no seu celular no mesmo Wi-Fi!"
