@@ -4,6 +4,16 @@ Este repositório contém minhas configurações e scripts pessoais do Sway (dot
 
 ## 📸 Capturas de Tela
 
+### Espaço de trabalho atual
+
+<div align="center">
+  <img src="Imagens/print_2026-06-07_20-21-30.png" width="30%" />
+  <img src="Imagens/print_2026-06-07_20-22-12.png" width="30%" />
+  <img src="Imagens/print_2026-06-07_20-22-29.png" width="30%" />
+</div>
+
+### Espaço de trabalho com DMS SHELL
+
 <div align="center">
   <img src="Imagens/print_2026-05-31_08-56-49.png" width="30%" />
   <img src="Imagens/print_2026-05-31_08-56-57.png" width="30%" />
