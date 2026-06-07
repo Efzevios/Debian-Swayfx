@@ -5,29 +5,14 @@
       "alignment": "left",
       "segments": [
         {
-          "background": "#2D2D2D",
-          "foreground": "#D4D4D4",
-          "leading_diamond": "\ue0b2",
-          "options": {
-            "time_format": "15:04:05"
-          },
-          "style": "diamond",
-          "template": " - {{ .CurrentDate | date .Format }} ",
-          "trailing_diamond": "<transparent,#2D2D2D>\ue0b2</>",
-          "type": "time"
-        },
-
-        {
           "background": "#4B4B4B",
           "foreground": "#F5F5F5",
-          "leading_diamond": "\ue0b2",
           "options": {
             "style": "roundrock",
             "threshold": 0
           },
-          "style": "diamond",
+          "style": "plain",
           "template": " {{ .FormattedMs }} ",
-          "trailing_diamond": "\ue0b0",
           "type": "executiontime"
         }
       ],
@@ -91,7 +76,7 @@
             "always_enabled": true
           },
           "style": "plain",
-          "template": " \ueb05 ",
+          "template": " > ",
           "type": "status"
         }
       ],
@@ -102,7 +87,7 @@
   "transient_prompt": {
     "background": "transparent",
     "foreground": "#B3B3B3",
-    "template": "\ue285 "
+    "template": "> "
   },
   "version": 4
 }
