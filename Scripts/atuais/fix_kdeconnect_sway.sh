@@ -11,6 +11,7 @@ rm -rf hypr-kdeconnect-fix
 git clone https://github.com/gfhdhytghd/hypr-kdeconnect-fix.git
 cd hypr-kdeconnect-fix
 sed -i 's/libeis-1.0>=1.4/libeis-1.0>=1.3/g' CMakeLists.txt
+sed -i 's/if (normalized.isEmpty() || normalized.size() > kMaxAppIdLength)/if (normalized.size() > kMaxAppIdLength) return false; if (normalized.isEmpty()) return true; \/\//g' src/security_policy.hpp
 
 echo "=> Compilando e instalando em ~/.local ..."
 cmake -S . -B build -DCMAKE_BUILD_TYPE=Release -DCMAKE_INSTALL_PREFIX="$HOME/.local" -DHKCF_PORTAL_USE_IN="sway"
