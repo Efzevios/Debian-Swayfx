@@ -87,6 +87,8 @@ Abaixo estão alguns projetos incríveis que recomendo e que complementam perfei
 *   **[tgpt](https://github.com/aandrew-me/tgpt)**
 *   **[Spicetify](https://spicetify.app/)**
 *   **[tldr](https://tldr.sh/)**
+*   **[Tela circle icon](https://github.com/vinceliuice/Tela-circle-icon-theme)**
+*   **[Orchis theme](https://github.com/vinceliuice/Orchis-theme)**
 
 ---
 
