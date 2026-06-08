@@ -26,6 +26,10 @@ if [ ! -f "$PORTAL_CONF" ]; then
     echo "[preferred]" > "$PORTAL_CONF"
 fi
 
+if ! grep -q "default=gtk" "$PORTAL_CONF"; then
+    sed -i '/\[preferred\]/a default=gtk' "$PORTAL_CONF"
+fi
+
 if ! grep -q "org.freedesktop.impl.portal.RemoteDesktop=hypr-kdeconnect" "$PORTAL_CONF"; then
     echo "org.freedesktop.impl.portal.RemoteDesktop=hypr-kdeconnect" >> "$PORTAL_CONF"
 fi

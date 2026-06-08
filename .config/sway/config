@@ -363,4 +363,4 @@ exec --no-startup-id /usr/bin/kdeconnect-indicator
 # Usar exec_always é a forma mais recomendada para iniciar o Waybar no Sway,
 # pois garante que ele rode como um cliente Wayland independente e 
 # reinicie corretamente quando o Sway for recarregado.
-exec_always pkill waybar; env LC_ALL="pt_BR.utf8" waybar
+exec_always sh -c 'pkill waybar; sleep 1; env LC_ALL="pt_BR.utf8" waybar'
