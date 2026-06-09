@@ -2,7 +2,7 @@
 
 # --- Configurações de Caminhos ---
 USER_HOME="/home/$USER"
-APP_DIR="$USER_HOME/Documentos/Aplicações/Cubesuite"
+APP_DIR="$USER_HOME/cubesuite"
 EXE_NAME="CubeSuite.exe"
 PREFIX_DIR="$USER_HOME/.wine-cubesuite"
 RUNNER_PATH="$USER_HOME/.local/bin/run-cubesuite"
@@ -58,7 +58,7 @@ export WINEESYNC=1
 export FREETYPE_PROPERTIES="truetype:interpreter-version=35"
 
 # Executa o CubeSuite (sem o fundo azul do Virtual Desktop)
-wine "\$APP_DIR/\$EXE_NAME"
+wine "$APP_DIR/$EXE_NAME"
 EOF
 
 chmod +x "$RUNNER_PATH"
