@@ -30,7 +30,7 @@ Este repositório contém minhas configurações e scripts pessoais do Sway (dot
 *   **Informações do Sistema:** [Fastfetch](https://github.com/fastfetch-cli/fastfetch)
 *   **Controle do Mouse via Teclado:** [warpd](https://github.com/rvaiya/warpd)
 
-*(Componentes como DMS, Wofi e Swaync não são mais utilizados no setup atual. Seus arquivos foram mantidos nas pastas `antigos/` caso queira acessá-los.)*
+*(Componentes como DM e Wofi não são mais utilizados no setup atual. Seus arquivos foram mantidos nas pastas `antigos/` caso queira acessá-los.)*
 
 ## 🚀 Instalação
 
