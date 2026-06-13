@@ -9,7 +9,6 @@ Super + N: Abre as notificações
 Super + Shift + N: Alterna o modo Não Perturbe
 Super + Shift + D: Abre o histórico da área de transferência
 Super + Shift + Q: Fecha a janela em foco
-Super + Shift + E: Abre Wlogout
 Super + Shift + C: Recarrega a configuração do Sway
 
 UTILITÁRIOS

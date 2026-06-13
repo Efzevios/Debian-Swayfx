@@ -139,7 +139,6 @@ blur on
 
 # Habilita desfoque (blur) especificamente para a camada do wofi (menu/launcher)
 layer_effects "wofi" blur enable
-layer_effects "wlogout" blur enable
 
 # ==========================================
 # 6. ATALHOS DE TECLADO
@@ -155,8 +154,6 @@ bindsym $mod+d exec $menu
 bindsym $mod+Shift+q kill
 # Mod + Shift + c: Recarrega as configurações do Sway
 bindsym $mod+Shift+c reload
-# Mod + Shift + e: Abre o menu de encerramento (wlogout)
-bindsym $mod+Shift+e exec wlogout -b 4 -L 550 -R 550
 
 # Utilitários (Cliphist, Cores, Print)
 
