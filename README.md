@@ -84,9 +84,10 @@ Os scripts do sistema foram reorganizados para facilitar o uso:
 Abaixo estão alguns projetos incríveis que recomendo e que complementam perfeitamente este rice:
 
 *   **[LinuxToys](https://github.com/psygreg/linuxtoys)**
-*   **[tgpt](https://github.com/aandrew-me/tgpt)**
+*   **[Tgpt](https://github.com/aandrew-me/tgpt)**
 *   **[Spicetify](https://spicetify.app/)**
-*   **[tldr](https://tldr.sh/)**
+*   **[GoAnime](https://github.com/alvarorichard/GoAnime)**
+*   **[Tldr](https://tldr.sh/)**
 *   **[Tela circle icon](https://github.com/vinceliuice/Tela-circle-icon-theme)**
 *   **[Orchis theme](https://github.com/vinceliuice/Orchis-theme)**
 
