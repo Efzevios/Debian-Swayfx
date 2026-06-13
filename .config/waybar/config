@@ -9,7 +9,9 @@
             "offscreen-css": true,
             "offscreen-css-text": "<span color='#ffb4ab'>...</span>",
             "rewrite": {
-                "^ • $": "*"
+                "^ • $": "---",
+                "^ • (.+)": "$1",
+                "(.+) • $": "$1"
             }
         }
     },
@@ -23,7 +25,9 @@
             "offscreen-css": true,
             "offscreen-css-text": "...",
             "rewrite": {
-                "^ • $": "*"
+                "^ • $": "---",
+                "^ • (.+)": "$1",
+                "(.+) • $": "$1"
             }
         }
     }
