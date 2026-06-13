@@ -1,0 +1,24 @@
+{
+    "label" : "timer5m",
+    "action" : "shutdown -r +5",
+    "text" : "5m",
+    "keybind" : "1"
+}
+{
+    "label" : "timer30m",
+    "action" : "shutdown -r +30",
+    "text" : "30m",
+    "keybind" : "2"
+}
+{
+    "label" : "timer1h",
+    "action" : "shutdown -r +60",
+    "text" : "1h",
+    "keybind" : "3"
+}
+{
+    "label" : "timer2h",
+    "action" : "shutdown -r +120",
+    "text" : "2h",
+    "keybind" : "4"
+}

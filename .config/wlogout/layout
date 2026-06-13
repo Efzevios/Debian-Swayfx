@@ -1,0 +1,24 @@
+{
+    "label" : "shutdown",
+    "action" : "systemctl poweroff",
+    "text" : "",
+    "keybind" : "s"
+}
+{
+    "label" : "reboot",
+    "action" : "systemctl reboot",
+    "text" : "",
+    "keybind" : "r"
+}
+{
+    "label" : "logout",
+    "action" : "swaymsg exit",
+    "text" : "",
+    "keybind" : "e"
+}
+{
+    "label" : "timer",
+    "action" : "sleep 0.1 && wlogout -b 4 -L 550 -R 550 -l ~/.config/wlogout/layout-timer",
+    "text" : "",
+    "keybind" : "t"
+}
