@@ -98,6 +98,13 @@ window#waybar > box {
     -gtk-icon-effect: highlight;
 }
 
+/* Esconde a cápsula e padding se o módulo estiver vazio (ex: KDE Connect inativo) */
+#tray.empty, .empty {
+    background-color: transparent;
+    padding: 0;
+    margin: 0;
+}
+
 #custom-swaync.notification {
     color: rgba(255, 180, 171, 1.0); /* Vermelho para indicar que há mensagens (apenas fora do Não Perturbe) */
 }
